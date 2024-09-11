@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Navigation Example</title>
+</head>
+<body>
+
+  <nav aria-label="Main Navigation" role="navigation">
+    <ul>
+      <li><a href="/home" aria-current="page">Home</a></li>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div>
+    <button aria-expanded="false" aria-controls="dropdown1" id="menuButton">
+      Menu
+    </button>
+    <ul id="dropdown1" role="menu" aria-hidden="true">
+      <li role="menuitem"><a href="/profile">Profile</a></li>
+      <li role="menuitem"><a href="/settings">Settings</a></li>
+      <li role="menuitem"><a href="/logout">Logout</a></li>
+    </ul>
+  </div>
+
+  <div aria-hidden="true">
+    <p>This content is hidden from screen readers and will not be accessible.</p>
+  </div>
+
+</body>
+</html>
