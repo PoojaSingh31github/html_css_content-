@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div style="display: contents; justify-content: space-between">
+        <div class="logo">
+          <img
+            src="https://coinswitch.co/_next/static/media/logo.01525825.svg"
+            alt="Coin switch"
+          />
+        </div>
+        <img
+          class="hamburger"
+          src="https://img.icons8.com/?size=100&id=36389&format=png&color=000000"
+          alt="Menu"
+        />
+        <div class="nav-links">
+          <div class="nav-items">
+            <a href="#">Products</a>
+            <img
+              style="
+                width: 15px;
+                height: 15px;
+                margin-top: 5px;
+                margin-left: 5px;
+              "
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
+              alt=""
+            />
+          </div>
+          <div class="nav-items">
+            <a href="#">Coins</a>
+          </div>
+          <div>
+            <a href="#">Ventures</a>
+          </div>
+          <div>
+            <a href="#">Blog</a>
+          </div>
+          <div>
+            <a href="#">Company</a>
+            <img
+              style="width: 15px; height: 15px; margin-top: 5px"
+              src="https://img.icons8.com/?size=100&id=99991&format=png&color=000000"
+              alt=""
+            />
+          </div>
+          <button class="signup">Login To Pro</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner img -->
+   
+
+
+
+<div class="grid-background">
+    <div class="text-content">
+      <img src="https://s3.ap-southeast-1.amazonaws.com/files.coinswitch.co/images/ventures_logo.svg" alt="">
+        <h1>Your Innovation</h1>
+        <h2>Our Fuel</h2>
+        <p class="text_para">CoinSwitch Ventures invests in the most promising Web3 and blockchain projects in India. Does that sound like you</p>
+        <button>Apply Now</button>
+    </div>
+</div>
+
+
+
+
+  </body>
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+  </script>
+</html>
